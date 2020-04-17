@@ -1,6 +1,6 @@
 # Pokemon CRUD API
 
-This API has the data of 150 pokemon. It consists of multiple objects which have a name and the url for more information about each Pokemon. It has search capabilities where you can search a Pokemon by ID or name.
+This API has the data of 150 pokemon. It consists of multiple objects which have a name and the url for more information about each Pokemon. It has full CRUD capabilities where you can search, update delete and even create a Pokemon.
 
 ---
 # Getting started
