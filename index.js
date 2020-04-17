@@ -45,7 +45,10 @@ app.delete("/lists/:id", function (req, res) {
       })
   })
 
-app.listen(4000, ()=>{
-    console.log("I'm on 4000")
-})
+
+app.set("port", process.env.PORT || 8080);
+
+app.listen(app.get("port"), () => {
+  console.log(`✅ PORT: ${app.get("port")} 🌟`);
+});
 
