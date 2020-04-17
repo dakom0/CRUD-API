@@ -12,13 +12,17 @@ There is a base url that displays the whole APi. In order to search for specific
 
 ### GET
 
-base url: 
+base url: https://dakom1-crud-api.herokuapp.com/lists
 
-This  allows you to search for Pokemon by their specific name. ex:
+This  allows you to search for Pokemon by their Pokedex number. 
 
-/"ID"
+Ex:
 
-This  allows you to search for Pokemon by their specific name. ex:
+/"Dex-Number"
+
+This  allows you to search for Pokemon by their specific name. 
+
+Ex:
 
 /name/"name of Pokemon"
 
@@ -26,17 +30,36 @@ This  allows you to search for Pokemon by their specific name. ex:
 
 ### POST
 
-url: 
+url: https://dakom1-crud-api.herokuapp.com/lists/
 
-This method allows you to enter your very own Pokemon to this database.
+This method allows you to create your very own Pokemon to this database.
 
 Ex:
 
 {
 "name": "Pokemon name",
-"url": "https://pokeapi.co/api/v2/pokemon-species/"ID
 
 }
+
+### UPDATE
+
+url: "https://dakom1-crud-api.herokuapp.com/lists/"ID
+
+This method allows you to edit a Pokemon in this database.
+
+Ex:
+
+{
+"name": "Pokemon name"
+
+}
+
+### DELETE
+
+url: "https://dakom1-crud-api.herokuapp.com/lists/"ID
+
+This method allows you to delete a Pokemon from the database.
+
 
 # Technologies used
 
@@ -46,6 +69,8 @@ Ex:
 4. JSON
 
 # Examples
+
+https://dakom1-crud-api.herokuapp.com/lists/150
 
 will return
 
@@ -59,6 +84,7 @@ will return
   }
 ]
 ```
+https://dakom1-crud-api.herokuapp.com/lists/name/bulbasaur
 
 will return
 
